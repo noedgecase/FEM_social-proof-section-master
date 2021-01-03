@@ -50,6 +50,7 @@ main{
 }
 
 .review{
+      // position:absolute;
       color:$darkMagenta;
       font-weight: 500;
       width:50%;
@@ -60,4 +61,19 @@ main{
       background:$lightGrayMagenta;
       margin:1rem 0;
       border-radius:10px;
+}
+
+.r1{
+      margin-right:10%;
+      top:5%;
+}
+
+.r2{
+      right:20%;
+      top:15%;
+}
+
+.r3{
+      right:30%;
+      top:20%;
 }

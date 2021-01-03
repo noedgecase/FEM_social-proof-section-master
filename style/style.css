@@ -59,4 +59,19 @@ main {
   border-radius: 10px;
 }
 
+.r1 {
+  margin-right: 10%;
+  top: 5%;
+}
+
+.r2 {
+  right: 20%;
+  top: 15%;
+}
+
+.r3 {
+  right: 30%;
+  top: 20%;
+}
+
 /*# sourceMappingURL=style.css.map */
