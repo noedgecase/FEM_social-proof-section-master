@@ -1,0 +1,19 @@
+@media (max-width:1100px){
+      main{
+            padding:1rem;
+      }
+      #top-section{
+            flex-direction: column;
+            padding:0;
+      }
+      #ratings{
+            height:1400px;
+      }
+      #welcome{
+            padding:0;
+      }
+      #testimonials{
+            flex-direction: column;
+            padding:0;
+      }
+}

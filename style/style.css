@@ -10,22 +10,27 @@ html {
 }
 
 body {
+  padding: 0;
+  position: relative;
   background: white;
+  background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
 }
 
 main {
-  position: relative;
-  margin: 6rem;
+  margin: 4rem;
 }
 
 #top-section {
   display: flex;
   width: 100%;
+  padding: 2rem 6rem;
 }
 
 #welcome {
   flex: 1;
   color: #502050;
+  padding-right: 15rem;
 }
 #welcome h1 {
   padding: 0.3rem;
@@ -34,44 +39,127 @@ main {
   font-weight: 700;
 }
 #welcome p {
-  padding: 0.3rem 10rem 0.3rem 0.3rem;
+  color: #937b92;
+  padding: 0.3rem 4rem 0.3rem 0.3rem;
   margin: 1rem 0;
-  line-height: 25px;
-  font-size: 15px;
+  line-height: 30px;
+  font-size: 20px;
   font-weight: 400;
 }
 
 #ratings {
-  flex: 2;
+  flex: 1;
   position: relative;
 }
 
 .review {
+  line-height: 20px;
+  position: absolute;
   color: #502050;
   font-weight: 500;
-  width: 50%;
+  width: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
   background: #f7f2f7;
-  margin: 1rem 0;
   border-radius: 10px;
+}
+.review h5::before {
+  content: url("../images/icon-star.svg") url("../images/icon-star.svg") url("../images/icon-star.svg") url("../images/icon-star.svg") url("../images/icon-star.svg");
+  margin-right: 2rem;
 }
 
 .r1 {
-  margin-right: 10%;
-  top: 5%;
+  right: 20%;
+  top: 0;
 }
 
 .r2 {
-  right: 20%;
-  top: 15%;
+  right: 10%;
+  top: 70px;
 }
 
 .r3 {
-  right: 30%;
-  top: 20%;
+  right: 0;
+  top: 140px;
+}
+
+#testimonials {
+  display: flex;
+  padding: 0 4rem;
+}
+
+.card {
+  height: 300px;
+  margin: 1.5rem;
+  padding: 2rem 3rem;
+  background: #502050;
+  border-radius: 12px;
+}
+.card p {
+  color: white;
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.c1 {
+  margin-top: 3rem;
+}
+
+.c2 {
+  margin-top: 5rem;
+}
+
+.c3 {
+  margin-top: 7rem;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+.person {
+  display: flex;
+  margin: 1.5rem 0;
+}
+.person img {
+  border-radius: 50%;
+  display: flex;
+  margin: auto 0;
+}
+.person h3 {
+  color: white;
+}
+.person h4 {
+  color: #ee68a4;
+  font-weight: 400;
+}
+
+@media (max-width: 1100px) {
+  main {
+    padding: 1rem;
+  }
+
+  #top-section {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #ratings {
+    height: 1400px;
+  }
+
+  #welcome {
+    padding: 0;
+  }
+
+  #testimonials {
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

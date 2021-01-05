@@ -13,22 +13,27 @@ html{
 }
 
 body{
+      padding:0;
+      position:relative;
       background:$white;
+      background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+      background-repeat: no-repeat;
 }
 
 main{
-      position:relative;
-      margin:6rem;
+      margin:4rem;
 }
 
 #top-section{
       display:flex;     
       width:100%;
+      padding:2rem 6rem;
 }
 
 #welcome{
       flex:1;
       color:$darkMagenta;
+      padding-right:15rem;
       h1{
             padding:.3rem;
             line-height:60px;
@@ -36,44 +41,104 @@ main{
             font-weight:700;
       }
       p{
-            padding:.3rem 10rem .3rem .3rem;
+            color:$darkGrayhMagenta;
+            padding:.3rem 4rem .3rem .3rem;
             margin:1rem 0;
-            line-height: 25px;
-            font-size:15px;
+            line-height: 30px;
+            font-size:20px;
             font-weight: 400;
       }
 }
 
 #ratings{
-      flex:2;
+      flex:1;
       position:relative;
 }
 
 .review{
-      // position:absolute;
+      line-height: 20px;
+      position:absolute;
       color:$darkMagenta;
       font-weight: 500;
-      width:50%;
+      width:450px;
       display:flex;
       justify-content: center;
       align-items: center;
       height:50px;
       background:$lightGrayMagenta;
-      margin:1rem 0;
       border-radius:10px;
+      h5::before{
+            content:url('../images/icon-star.svg') url('../images/icon-star.svg') url('../images/icon-star.svg') url('../images/icon-star.svg') url('../images/icon-star.svg');
+            margin-right:2rem;
+      }
 }
 
 .r1{
-      margin-right:10%;
-      top:5%;
+      right:20%;
+      top:0;
 }
 
 .r2{
-      right:20%;
-      top:15%;
+      right:10%;
+      top:70px;
 }
 
 .r3{
-      right:30%;
-      top:20%;
+      right:0;
+      top:140px;
 }
+
+#testimonials{
+      display:flex;
+      padding:0 4rem;
+}
+
+.card{
+      height:300px;
+      margin:1.5rem;
+      padding:2rem 3rem;
+      background:$darkMagenta;
+      border-radius:12px;
+      p{
+            color:$white;
+            line-height: 22px;
+            font-size:18px;
+      }
+}
+
+.c1{
+      margin-top:3rem;
+}
+
+.c2{
+      margin-top:5rem;
+}
+
+.c3{
+      margin-top:7rem;
+}
+
+.name{
+      display:flex;
+      flex-direction: column;
+      margin:0 2rem;
+}
+
+.person{
+      display:flex;
+      margin:1.5rem 0;
+      img{
+            border-radius: 50%;
+            display:flex;
+            margin:auto 0;
+      }
+      h3{
+            color:$white;
+      }
+      h4{
+            color:$softPink;
+            font-weight: 400;
+      }
+}
+
+@import 'queries';
