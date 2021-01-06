@@ -18,9 +18,13 @@ body{
       background:$white;
       background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
       background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: left top, right bottom;
+      overflow-x: hidden;
 }
 
 main{
+      min-width:320px;
       margin:4rem;
 }
 
@@ -33,7 +37,7 @@ main{
 #welcome{
       flex:1;
       color:$darkMagenta;
-      padding-right:15rem;
+      // padding-right:15rem;
       h1{
             padding:.3rem;
             line-height:60px;
@@ -51,16 +55,18 @@ main{
 }
 
 #ratings{
-      flex:1;
-      position:relative;
+      flex:1.5;
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
 }
 
 .review{
       line-height: 20px;
-      position:absolute;
       color:$darkMagenta;
       font-weight: 500;
       width:450px;
+      margin:1rem;
       display:flex;
       justify-content: center;
       align-items: center;
@@ -74,18 +80,15 @@ main{
 }
 
 .r1{
-      right:20%;
-      top:0;
+      margin-left:10%;
 }
 
 .r2{
-      right:10%;
-      top:70px;
+      margin-left:15%;
 }
 
 .r3{
-      right:0;
-      top:140px;
+      margin-left:20%;
 }
 
 #testimonials{
@@ -94,9 +97,9 @@ main{
 }
 
 .card{
-      height:300px;
-      margin:1.5rem;
-      padding:2rem 3rem;
+      // min-height:300px;
+      margin:auto 1rem;
+      padding:2rem 2.5rem;
       background:$darkMagenta;
       border-radius:12px;
       p{
@@ -108,14 +111,17 @@ main{
 
 .c1{
       margin-top:3rem;
+      grid-area: c1;
 }
 
 .c2{
       margin-top:5rem;
+      grid-area: c2;
 }
 
 .c3{
       margin-top:7rem;
+      grid-area: c3;
 }
 
 .name{
@@ -125,6 +131,7 @@ main{
 }
 
 .person{
+      align-items: center;
       display:flex;
       margin:1.5rem 0;
       img{
