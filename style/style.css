@@ -145,13 +145,13 @@ main {
 
 @media (max-width: 1400px) {
   main {
-    padding: 6rem;
+    padding: 2rem;
     margin: 0;
   }
 
   #top-section {
     flex-direction: column;
-    padding: 0;
+    padding: 4rem;
   }
 
   #ratings {
@@ -170,21 +170,13 @@ main {
     padding: 0;
   }
 
-  .c1 {
-    margin: 0.5rem;
-  }
-
-  .c2 {
-    margin: 0.5rem;
-  }
-
-  .c3 {
-    margin: 0.5rem;
+  .card {
+    margin: 1rem;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 760px) {
   main {
-    padding: 2rem;
+    padding: 0.5rem;
   }
 
   #top-section {
@@ -222,8 +214,8 @@ main {
   }
 
   #welcome h1 {
-    font-size: 40px;
-    line-height: 42px;
+    font-size: 50px;
+    line-height: 45px;
   }
   #welcome p {
     padding: 0;
